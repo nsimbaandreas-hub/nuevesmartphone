@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparatif Smartphones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0f172a, #1e293b);
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .phones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        .pros { color: #15803d; font-size: 14px; }
+        .cons { color: #b91c1c; font-size: 14px; }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-buy {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .btn-details {
+            background-color: #e5e7eb;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Comparatif Smartphones</h1>
+    <p>Trouvez le smartphone adapté à votre budget</p>
+</header>
+
+<div class="container">
+
+    <!-- HAUT DE GAMME -->
+    <h2>🔥 Haut de gamme</h2>
+    <div class="phones">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/IPhone_14_Pro.png" alt="iPhone Pro">
+            <h3>iPhone Pro Max</h3>
+            <p class="price">≈ 1 300 €</p>
+            <ul>
+                <li>OLED 120 Hz</li>
+                <li>Performances extrêmes</li>
+                <li>Photo & vidéo pro</li>
+            </ul>
+            <p class="pros">✔ Qualité premium</p>
+            <p class="cons">✖ Prix élevé</p>
+            <div class="buttons">
+                <button class="btn btn-buy">Acheter</button>
+                <button class="btn btn-details">Voir détails</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOYENNE GAMME -->
+    <h2>⚖️ Moyenne gamme</h2>
+    <div class="phones">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Samsung_Galaxy_S21.png" alt="Samsung Galaxy">
+            <h3>Samsung Galaxy FE</h3>
+            <p class="price">≈ 700 €</p>
+            <ul>
+                <li>Écran AMOLED</li>
+                <li>Bon équilibre</li>
+                <li>Photo 50 MP</li>
+            </ul>
+            <p class="pros">✔ Bon rapport qualité/prix</p>
+            <p class="cons">✖ Pas totalement premium</p>
+            <div class="buttons">
+                <button class="btn btn-buy">Acheter</button>
+                <button class="btn btn-details">Voir détails</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Google_Pixel_7.png" alt="Google Pixel">
+            <h3>Google Pixel</h3>
+            <p class="price">≈ 550 €</p>
+            <ul>
+                <li>Android pur</li>
+                <li>Photo IA</li>
+                <li>Mises à jour longues</li>
+            </ul>
+            <p class="pros">✔ Excellente photo</p>
+            <p class="cons">✖ Autonomie moyenne</p>
+            <div class="buttons">
+                <button class="btn btn-buy">Acheter</button>
+                <button class="btn btn-details">Voir détails</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BASSE GAMME -->
+    <h2>💰 Basse gamme</h2>
+    <div class="phones">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Samsung_Galaxy_A_series.png" alt="Samsung Galaxy A">
+            <h3>Samsung Galaxy A</h3>
+            <p class="price">≈ 200 €</p>
+            <ul>
+                <li>Grande batterie</li>
+                <li>Écran confortable</li>
+                <li>Usage quotidien</li>
+            </ul>
+            <p class="pros">✔ Prix accessible</p>
+            <p class="cons">✖ Performances limitées</p>
+            <div class="buttons">
+                <button class="btn btn-buy">Acheter</button>
+                <button class="btn btn-details">Voir détails</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 – Comparatif smartphones</p>
+</footer>
+
+</body>
+</html>
